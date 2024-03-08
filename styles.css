@@ -179,3 +179,60 @@ footer {
         margin: 0 20px 40px;
     }
 }
+
+/* Add styles for the spotlight products section */
+.products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.product {
+    display: inline-block;
+    width: 300px;
+    margin: 0 20px 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.product-content {
+    padding: 20px;
+}
+
+.product h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.product p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Add responsive styles for spotlight products section */
+@media (min-width: 768px) {
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .product {
+        margin: 0 20px 40px;
+    }
+}
