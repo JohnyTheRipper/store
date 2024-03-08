@@ -122,3 +122,47 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+
+.products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.product {
+    margin-bottom: 40px;
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.product p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Add responsive styles for product section */
+@media (min-width: 768px) {
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .product {
+        width: 300px;
+        margin: 0 20px 40px;
+    }
+}
