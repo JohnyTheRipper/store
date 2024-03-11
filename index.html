@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,105 +7,104 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         /* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #222;
-    color: #fff;
-    line-height: 1.6;
-}
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #222;
+            color: #fff;
+            line-height: 1.6;
+        }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Styles for the topbar */
+        header {
+            background-color: #191919; /* Purple */
+            color: #fff;
+            padding: 10px 0; /* Reduced padding */
+            text-align: center;
+        }
 
-header {
-    background-color: #191919; /* Purple */
-    color: #fff;
-    padding: 10px 0; /* Reduced padding */
-    text-align: center;
-}
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
 
-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
+        nav ul {
+            list-style-type: none;
+            margin-top: 20px;
+            text-align: center; /* Centering the links */
+        }
 
-nav ul {
-    list-style-type: none;
-    margin-top: 20px;
-    text-align: center; /* Centering the links */
-}
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+        /* More styles for the topbar */
+        .sticky-topbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #191919; /* Dark Grey */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Added box shadow for a modern look */
+            padding: 5px 0; /* Reduced padding */
+        }
 
-/* Updated styles for the topbar */
-.sticky-topbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: #191919; /* Dark Grey */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Added box shadow for a modern look */
-    padding: 5px 0; /* Reduced padding */
-}
+        .sticky-topbar .container {
+            padding: 0 20px; /* Adjusted horizontal padding */
+            text-align: center; /* Centering the content */
+        }
 
-.sticky-topbar .container {
-    padding: 0 20px; /* Adjusted horizontal padding */
-    text-align: center; /* Centering the content */
-}
+        .sticky-topbar .logo {
+            font-size: 24px;
+            color: #fff;
+            font-weight: bold;
+            float: left; /* Aligning the logo to the left */
+        }
 
-.sticky-topbar .logo {
-    font-size: 24px;
-    color: #fff;
-    font-weight: bold;
-    float: left; /* Aligning the logo to the left */
-}
+        .sticky-topbar nav ul {
+            list-style-type: none;
+            margin-top: 0; /* Removed margin-top */
+            text-align: right; /* Aligning the links to the right */
+        }
 
-.sticky-topbar nav ul {
-    list-style-type: none;
-    margin-top: 0; /* Removed margin-top */
-    text-align: right; /* Aligning the links to the right */
-}
-
-.sticky-topbar nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
+        .sticky-topbar nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
 
         .sticky-topbar nav ul li a:hover {
             color: #800080;
         }
 
-
+        /* Styls for everything else */
         .hero {
-    background-image: url('https://fakeimg.pl/1200x500');
-    background-size: cover;
-    background-position: center;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-}
-
+            background-image: url('https://fakeimg.pl/1200x500');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
 
         .hero-content {
             max-width: 600px;
