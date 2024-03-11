@@ -261,6 +261,5 @@
         }
         
         .navigation ul li a:hover {
-            color: #800080; /* Change color on hover */
+            color: #800080; /* Change color on hover to #800080 */
         }
-        
