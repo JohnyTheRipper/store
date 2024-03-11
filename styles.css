@@ -1,238 +1,266 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-}
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #222;
+            color: #fff;
+            line-height: 1.6;
+        }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Styles for the topbar */
+        header {
+            background-color: #191919; /* Purple */
+            color: #fff;
+            padding: 10px 0; /* Reduced padding */
+            text-align: center;
+        }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        nav ul {
+            list-style-type: none;
+            margin-top: 20px;
+            text-align: center; /* Centering the links */
+        }
 
-header h1 {
-    font-size: 24px;
-}
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-}
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
 
-nav ul li {
-    margin-left: 20px;
-}
+        /* More styles for the topbar */
+        .sticky-topbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #191919; /* Dark Grey */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Added box shadow for a modern look */
+            padding: 5px 0; /* Reduced padding */
+        }
 
-nav ul li:first-child {
-    margin-left: 0;
-}
+        .sticky-topbar .container {
+            padding: 0 20px; /* Adjusted horizontal padding */
+            text-align: center; /* Centering the content */
+        }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+        .sticky-topbar .logo {
+            font-size: 24px;
+            color: #fff;
+            font-weight: bold;
+            float: left; /* Aligning the logo to the left */
+        }
 
-nav ul li a:hover {
-    color: #ccc;
-}
+        .sticky-topbar nav ul {
+            list-style-type: none;
+            margin-top: 0; /* Removed margin-top */
+            text-align: right; /* Aligning the links to the right */
+        }
 
-.hero {
-    background-image: url('placeholder.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+        .sticky-topbar nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
 
-.hero-content {
-    max-width: 600px;
-}
+        .sticky-topbar nav ul li a:hover {
+            color: #800080;
+        }
 
-.hero h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
+        /* Styls for everything else */
+        .hero {
+            background-image: url('https://fakeimg.pl/1200x500');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
 
-.hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
+        .hero-content {
+            max-width: 600px;
+        }
 
-.btn {
-    padding: 15px 30px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
 
-.btn:hover {
-    background-color: #0056b3;
-}
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
 
+        .btn {
+            padding: 15px 30px;
+            background-color: #800080; /* Purple */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
 
-.contact {
-    padding: 50px 20px;
-}
+        .btn:hover {
+            background-color: #4B0082; /* Darker purple */
+        }
 
-.contact h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
+        .products {
+            padding: 50px 0;
+            text-align: center;
+        }
 
-.contact input,
-.contact textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: none;
-    border-bottom: 1px solid #007bff;
-    background-color: transparent;
-    outline: none;
-}
+        .products h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
 
-.contact button {
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
+        .product {
+            display: inline-block;
+            width: 300px;
+            margin: 0 20px 40px;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            background-color: #333; /* Darker background */
+        }
 
-.contact button:hover {
-    background-color: #0056b3;
-}
+        .product:hover {
+            transform: translateY(-5px);
+        }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
+        .product img {
+            width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
 
-.products {
-    padding: 50px 20px;
-    text-align: center;
-}
+        .product-content {
+            padding: 20px;
+        }
 
-.products h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
+        .product h3 {
+            font-size: 24px;
+            margin-top: 10px;
+        }
 
-.product {
-    margin-bottom: 40px;
-}
+        .product p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
 
-.product img {
-    width: 200px;
-    height: auto;
-    border-radius: 5px;
-}
+        .contact {
+            padding: 50px 0;
+            text-align: center;
+        }
 
-.product h3 {
-    font-size: 24px;
-    margin-top: 10px;
-}
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
 
-.product p {
-    font-size: 16px;
-    margin-top: 10px;
-}
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 1px solid #800080; /* Purple */
+            background-color: transparent;
+            color: #fff;
+            outline: none;
+        }
 
-/* Add responsive styles for product section */
-@media (min-width: 768px) {
-    .products {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+        .contact input::placeholder,
+        .contact textarea::placeholder {
+            color: #aaa;
+        }
 
-    .product {
-        width: 300px;
-        margin: 0 20px 40px;
-    }
-}
+        .contact button {
+            background-color: #800080; /* Purple */
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
 
-/* Add styles for the spotlight products section */
-.products {
-    padding: 50px 20px;
-    text-align: center;
-}
+        .contact button:hover {
+            background-color: #4B0082; /* Darker purple */
+        }
 
-.products h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
+        footer {
+            background-color: #222; /* Darker background */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
 
-.product {
-    display: inline-block;
-    width: 300px;
-    margin: 0 20px 40px;
-    border-radius: 5px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.product:hover {
-    transform: translateY(-5px);
-}
-
-.product img {
-    width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.product-content {
-    padding: 20px;
-}
-
-.product h3 {
-    font-size: 24px;
-    margin-top: 10px;
-}
-
-.product p {
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-/* Add responsive styles for spotlight products section */
-@media (min-width: 768px) {
-    .products {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .product {
-        margin: 0 20px 40px;
-    }
-}
+        footer p {
+            margin: 0;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .topbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+        
+        .logo img {
+            height: 40px; /* Adjust height as needed */
+        }
+        
+        .navigation ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navigation ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        .navigation ul li:last-child {
+            margin-right: 0;
+        }
+        
+        .navigation ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .navigation ul li a:hover {
+            color: #ffd700; /* Change color on hover */
+        }
+        
