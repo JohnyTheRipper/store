@@ -52,15 +52,16 @@
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease, text-decoration 0.3s ease; /* Added transition for text-decoration */
         }
 
         nav ul li a:hover {
-            color: #ccc;
+            color: #800080;
+            text-decoration: underline; /* Underline on hover */
         }
 
         .hero {
-            background-image: url('placeholder.jpg');
+            background-image: url('https://fakeimg.pl/1500x600');
             background-size: cover;
             background-position: center;
             height: 600px;
@@ -198,11 +199,11 @@
 <body>
     <header>
         <div class="container">
-            <h1>Online Store</h1>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="shop.html">Products</a></li>
+                    <li><a href="https://etsy.com" target="_blank">Etsy</a></li> <!-- Added Etsy link -->
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -212,9 +213,9 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h2>Welcome to our Online Store!</h2>
-                <p>Find the best deals on various items.</p>
-                <a href="shop.html" class="btn">Shop Now</a>
+                <h2>Welcome to our Store!</h2>
+                <p>Find the best deals on our various items.</p>
+                <a href="shop.html" class="btn">Shop Now!</a>
             </div>
         </div>
     </section>
