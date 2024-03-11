@@ -29,7 +29,7 @@
         header {
             background-color: #191919; /* Purple */
             color: #fff;
-            padding: 20px 0;
+            padding: 10px 0; /* Reduced padding */
             text-align: center;
         }
 
@@ -41,7 +41,7 @@
         nav ul {
             list-style-type: none;
             display: flex;
-            justify-content: center;
+            justify-content: flex-end; /* Moved to the right */
             margin-top: 20px;
         }
 
@@ -59,6 +59,53 @@
             color: #800080;
             text-decoration: underline; /* Underline on hover */
         }
+
+        /* Updated styles for the topbar */
+        .sticky-topbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #191919; /* Purple */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Added box shadow for a modern look */
+            padding: 5px 0; /* Reduced padding */
+        }
+
+        .sticky-topbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px; /* Adjusted horizontal padding */
+        }
+
+        .sticky-topbar .logo {
+            font-size: 24px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .sticky-topbar nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end; /* Moved to the right */
+            margin-top: 0; /* Removed margin-top */
+        }
+
+        .sticky-topbar nav ul li {
+            margin: 0 15px;
+        }
+
+        .sticky-topbar nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .sticky-topbar nav ul li a:hover {
+            color: #800080;
+        }
+
 
         .hero {
             background-image: url('https://fakeimg.pl/1500x600');
@@ -197,19 +244,22 @@
     </style>
 </head>
 <body>
-    <header>
+    <header class="sticky-topbar">
         <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="shop.html">Products</a></li>
-                    <li><a href="https://etsy.com" target="_blank">Etsy</a></li> <!-- Added Etsy link -->
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="topbar">
+                <div class="logo">Online Store</div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="shop.html">Products</a></li>
+                        <li><a href="https://etsy.com" target="_blank">Etsy</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-
+    
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
