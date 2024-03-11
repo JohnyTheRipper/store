@@ -41,7 +41,7 @@
         nav ul {
             list-style-type: none;
             margin-top: 20px;
-            text-align: right; /* Aligning the links to the right */
+            text-align: center; /* Centering the links */
         }
 
         nav ul li {
@@ -52,12 +52,29 @@
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            transition: color 0.3s ease, text-decoration 0.3s ease; /* Added transition for text-decoration */
+            position: relative; /* Added for bubble effect */
+        }
+
+        nav ul li a::before {
+            content: '';
+            position: absolute;
+            bottom: -5px; /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            background-color: #fff; /* Bubble color */
+            border-radius: 50%;
+            transition: width 0.3s ease, height 0.3s ease;
+        }
+
+        nav ul li a:hover::before {
+            width: 100%; /* Expand width on hover */
+            height: 100%; /* Expand height on hover */
         }
 
         nav ul li a:hover {
             color: #800080;
-            text-decoration: underline; /* Underline on hover */
         }
 
         /* Updated styles for the topbar */
@@ -87,7 +104,7 @@
         .sticky-topbar nav ul {
             list-style-type: none;
             margin-top: 0; /* Removed margin-top */
-            text-align: right; /* Aligning the links to the right */
+            text-align: center; /* Centering the links */
         }
 
         .sticky-topbar nav ul li {
@@ -98,7 +115,25 @@
         .sticky-topbar nav ul li a {
             color: #fff;
             text-decoration: none;
-            transition: color 0.3s ease;
+            position: relative; /* Added for bubble effect */
+        }
+
+        .sticky-topbar nav ul li a::before {
+            content: '';
+            position: absolute;
+            bottom: -5px; /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            background-color: #fff; /* Bubble color */
+            border-radius: 50%;
+            transition: width 0.3s ease, height 0.3s ease;
+        }
+
+        .sticky-topbar nav ul li a:hover::before {
+            width: 100%; /* Expand width on hover */
+            height: 100%; /* Expand height on hover */
         }
 
         .sticky-topbar nav ul li a:hover {
