@@ -4,8 +4,196 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Store</title>
-    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #222;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #663399; /* Purple */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ccc;
+        }
+
+        .hero {
+            background-image: url('placeholder.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            background-color: #800080; /* Purple */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #4B0082; /* Darker purple */
+        }
+
+        .products {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .products h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .product {
+            display: inline-block;
+            width: 300px;
+            margin: 0 20px 40px;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            background-color: #333; /* Darker background */
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .product-content {
+            padding: 20px;
+        }
+
+        .product h3 {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .product p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .contact {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 1px solid #800080; /* Purple */
+            background-color: transparent;
+            color: #fff;
+            outline: none;
+        }
+
+        .contact input::placeholder,
+        .contact textarea::placeholder {
+            color: #aaa;
+        }
+
+        .contact button {
+            background-color: #800080; /* Purple */
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact button:hover {
+            background-color: #4B0082; /* Darker purple */
+        }
+
+        footer {
+            background-color: #222; /* Darker background */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -36,9 +224,11 @@
             <h2>Spotlight Products</h2>
             <div class="product">
                 <img src="product1.jpg" alt="Product 1">
-                <h3>Product 1</h3>
-                <p>Description of Product 1.</p>
-                <p>Price: $X.XX</p>
+                <div class="product-content">
+                    <h3>Product 1</h3>
+                    <p>Description of Product 1.</p>
+                    <p>Price: $X.XX</p>
+                </div>
             </div>
             <!-- Add more product divs here -->
         </div>
@@ -47,12 +237,17 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <form action="#" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+            <section id="contact" class="contact">
+                <div class="container">
+                    <h2>Contact Us</h2>
+                    <form action="#" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
         </div>
     </section>
 
