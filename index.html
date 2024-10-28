@@ -1,164 +1,330 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Reilm Creations</title>
-  <link rel="stylesheet" href="./style.css">
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Reilm Creations</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="company-logo">Reilm Creations</div>
+            <nav class="navbar">
+                <ul class="nav-items">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Offer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="bx bx-menu"></i>
+                <i class="bx bx-x"></i>
+            </div>
+        </header>
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <main>
+            <!-- HERO SECTION -->
+            <section class="container section-1">
+                <div class="slogan">
+                    <h1>Welcome to Reilm Creations</h1>
+                    <h2>
+                        Discover Unique Handcrafted Art and Timeless Creations
+                    </h2>
+                    <p>
+                        Your go-to shop for beautifully crafted art pieces
+                        inspired by Nordic elegance.
+                    </p>
+                </div>
+                <div class="hero-image-container">
+                    <img
+                        src="https://fakeimg.pl/500x300"
+                        alt="Showcasing Art"
+                        class="hero-img"
+                    />
+                </div>
+            </section>
 
-<body>
-  <header>
-    <div class="company-logo">R</div>
-    <nav class="navbar">
-      <ul class="nav-items">
-        <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">OFFER</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">SHOP</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
-      </ul>
-    </nav>
-    <div class="menu-toggle">
-      <i class="bx bx-menu"></i>
-      <i class="bx bx-x"></i>
-    </div>
-  </header>
-  <main>
-    <!-- HOME SECTION -->
-    <section class="container section-1">
-      <div class="slogan">
-        <h1 class="company-title">Reilm Creations</h1>
-        <h2 class="company-slogan">
-          The best craft shop in the area, where customers come first.
-        </h2>
-      </div>
-      <div class="home-computer-container">
-        <img class="home-computer" src="https://fakeimg.pl/500x300" alt="a computer in dark with shadow" class="home-img">
-      </div>
-    </section>
+            <!-- OFFER SECTION -->
+            <section class="container section-2">
+                <h2 class="section-heading">Featured Items</h2>
+                <div class="offer">
+                    <img
+                        src="https://fakeimg.pl/500x169"
+                        alt="Chess Set"
+                        class="offer-img"
+                    />
+                    <div class="offer-description">
+                        <h3>Chess Set</h3>
+                        <p>
+                            Handcrafted Nordic-inspired chess set that’s perfect
+                            for collectors.
+                        </p>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="offer">
+                    <img
+                        src="https://fakeimg.pl/500x169"
+                        alt="Pick Holder"
+                        class="offer-img"
+                    />
+                    <div class="offer-description">
+                        <h3>Pick Holder</h3>
+                        <p>
+                            Unique and functional, designed to store and display
+                            guitar picks.
+                        </p>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
 
-    <!-- OFFER SECTION -->
-    <section class="container section-2">
-      <!-- offer 1 -->
-      <div class="offer offer-1">
-        <img src="https://fakeimg.pl/500x169" alt="a computer in dark with with white shadow" class="offer-img offer-1-img">
-        <div class="offer-description offer-desc-1">
-          <h2 class="offer-title">Chess Set</h2>
-          <p class="offer-hook">This a Chess Set nulla vulputate magna vel odio sagittis bibendium...</p>
-          <div class="cart-btn">ADD TO CART</div>
-        </div>
-      </div>
-      <!-- offer 2 -->
-      <div class="offer offer-2">
-        <img src="https://fakeimg.pl/500x169" alt="a opened computer" class="offer-img offer-2-img">
-        <div class="offer-description offer-desc-2">
-          <h2 class="offer-title">Pick Holder</h2>
-          <p class="offer-hook">This a Pick Holder nulla vulputate magna vel odio sagittis bibendium...</p>
-          <div class="cart-btn">ADD TO CART</div>
-        </div>
-      </div>
-    </section>
+            <!-- PRODUCT SECTION -->
+            <section class="container section-3">
+                <h2 class="section-heading">Our Products</h2>
+                <div class="product-gallery">
+                    <!-- product - 1 -->
+                    <div class="product product-1">
+                        <img
+                            src="https://fakeimg.pl/200x200"
+                            alt="Epoxy Project"
+                            class="product-img"
+                        />
+                        <h3 class="product-title">Epoxy Project</h3>
+                        <p class="product-description">
+                            A unique epoxy resin art piece that brings beauty
+                            and elegance.
+                        </p>
+                        <span class="product-add-cart">ADD TO CART</span>
+                    </div>
+                    <!-- product - 2 -->
+                    <div class="product product-2">
+                        <img
+                            src="https://fakeimg.pl/200x200"
+                            alt="Wood Carving"
+                            class="product-img"
+                        />
+                        <h3 class="product-title">Wood Carving</h3>
+                        <p class="product-description">
+                            Handcrafted wood carving that showcases fine
+                            craftsmanship.
+                        </p>
+                        <span class="product-add-cart">ADD TO CART</span>
+                    </div>
+                    <!-- product - 3 -->
+                    <div class="product product-3">
+                        <img
+                            src="https://fakeimg.pl/200x200"
+                            alt="Baseball/Pokemon Card"
+                            class="product-img"
+                        />
+                        <h3 class="product-title">Collectible Cards</h3>
+                        <p class="product-description">
+                            A collection of rare baseball and Pokémon cards for
+                            enthusiasts.
+                        </p>
+                        <span class="product-add-cart">ADD TO CART</span>
+                    </div>
+                    <!-- product - 4 -->
+                    <div class="product product-4">
+                        <img
+                            src="https://fakeimg.pl/200x200"
+                            alt="Art Book"
+                            class="product-img"
+                        />
+                        <h3 class="product-title">Art Book</h3>
+                        <p class="product-description">
+                            A beautifully illustrated art book featuring various
+                            artists.
+                        </p>
+                        <span class="product-add-cart">ADD TO CART</span>
+                    </div>
+                    <!-- product - 5 -->
+                    <div class="product product-5">
+                        <img
+                            src="https://fakeimg.pl/200x200"
+                            alt="Ceramic Vase"
+                            class="product-img"
+                        />
+                        <h3 class="product-title">Ceramic Vase</h3>
+                        <p class="product-description">
+                            A handcrafted ceramic vase perfect for any decor.
+                        </p>
+                        <span class="product-add-cart">ADD TO CART</span>
+                    </div>
+                    <!-- product - 6 -->
+                    <div class="product product-6">
+                        <img
+                            src="https://fakeimg.pl/200x200"
+                            alt="Knitted Blanket"
+                            class="product-img"
+                        />
+                        <h3 class="product-title">Knitted Blanket</h3>
+                        <p class="product-description">
+                            A warm and cozy knitted blanket for chilly nights.
+                        </p>
+                        <span class="product-add-cart">ADD TO CART</span>
+                    </div>
+                    <!-- product - 7 -->
+                    <div class="product product-7">
+                        <img
+                            src="https://fakeimg.pl/200x200"
+                            alt="Handmade Soap"
+                            class="product-img"
+                        />
+                        <h3 class="product-title">Handmade Soap</h3>
+                        <p class="product-description">
+                            All-natural handmade soap with soothing scents.
+                        </p>
+                        <span class="product-add-cart">ADD TO CART</span>
+                    </div>
+                    <!-- product - 8 -->
+                    <div class="product product-8">
+                        <img
+                            src="https://fakeimg.pl/200x200"
+                            alt="Leather Wallet"
+                            class="product-img"
+                        />
+                        <h3 class="product-title">Leather Wallet</h3>
+                        <p class="product-description">
+                            A stylish and durable leather wallet for everyday
+                            use.
+                        </p>
+                        <span class="product-add-cart">ADD TO CART</span>
+                    </div>
+                    <!-- product - 9 -->
+                    <div class="product product-9">
+                        <img
+                            src="https://fakeimg.pl/200x200"
+                            alt="Glass Terrarium"
+                            class="product-img"
+                        />
+                        <h3 class="product-title">Glass Terrarium</h3>
+                        <p class="product-description">
+                            A beautiful glass terrarium to showcase your plants.
+                        </p>
+                        <span class="product-add-cart">ADD TO CART</span>
+                    </div>
+                    <!-- product - 10 -->
+                    <div class="product product-10">
+                        <img
+                            src="https://fakeimg.pl/200x200"
+                            alt="Wall Art"
+                            class="product-img"
+                        />
+                        <h3 class="product-title">Wall Art</h3>
+                        <p class="product-description">
+                            Unique wall art pieces that add character to any
+                            room.
+                        </p>
+                        <span class="product-add-cart">ADD TO CART</span>
+                    </div>
+                    <!-- product - 11 -->
+                    <div class="product product-11">
+                        <img
+                            src="https://fakeimg.pl/200x200"
+                            alt="Handcrafted Jewelry"
+                            class="product-img"
+                        />
+                        <h3 class="product-title">Handcrafted Jewelry</h3>
+                        <p class="product-description">
+                            Beautiful handcrafted jewelry for special occasions.
+                        </p>
+                        <span class="product-add-cart">ADD TO CART</span>
+                    </div>
+                    <!-- product - 12 -->
+                    <div class="product product-12">
+                        <img
+                            src="https://fakeimg.pl/200x200"
+                            alt="Scented Candle"
+                            class="product-img"
+                        />
+                        <h3 class="product-title">Scented Candle</h3>
+                        <p class="product-description">
+                            A delightful scented candle to enhance your home
+                            ambiance.
+                        </p>
+                        <span class="product-add-cart">ADD TO CART</span>
+                    </div>
+                </div>
+            </section>
 
-    <!-- PRODUCT SECTION -->
-    <section class="container section-3">
-      <!-- product - 1 -->
-      <div class="product product-1">
-        <img src="https://fakeimg.pl/400x400" alt="Eppoxy Project" class="product-img">
-        <span class="product_add_cart">ADD TO CART</span>
-      </div>
-      <!-- product - 2 -->
-      <div class="product product-2">
-        <img src="https://fakeimg.pl/400x400" alt="Wood Carving" class="product-img">
-        <span class="product_add_cart">ADD TO CART</span>
-      </div>
-      <!-- product - 3 -->
-      <div class="product product-3">
-        <img src="https://fakeimg.pl/400x400" alt="Baseball/Pokemon Card" class="product-img">
-        <span class="product_add_cart">ADD TO CART</span>
-      </div>
-      <!-- product - 4 -->
-      <div class="product product-4">
-        <img src="https://fakeimg.pl/400x400" alt="Book" class="product-img">
-        <span class="product_add_cart">ADD TO CART</span>
-      </div>
-    </section>
+            <!-- SPONSOR SECTION -->
+            <section class="container section-4">
+                <h2 class="section-heading">Our Partners</h2>
+                <div class="sponsor-gallery">
+                    <div class="sponsor">
+                        <img src="https://fakeimg.pl/100x50" alt="Sponsor 1" />
+                    </div>
+                    <div class="sponsor">
+                        <img src="https://fakeimg.pl/100x50" alt="Sponsor 2" />
+                    </div>
+                    <div class="sponsor">
+                        <img src="https://fakeimg.pl/100x50" alt="Sponsor 3" />
+                    </div>
+                    <div class="sponsor">
+                        <img src="https://fakeimg.pl/100x50" alt="Sponsor 4" />
+                    </div>
+                </div>
+            </section>
 
-    <!-- SPONSOR SECTION -->
-    <section class="container section-4">
-      <!-- SPONSOR group 1 -->
-      <div class="sponsor sponsor-1"><img src="https://raw.githubusercontent.com/r-e-d-ant/Computer-store-website/b90ac65459206fef22e9b87313f587185554263b/assets/images/microsoft.svg" alt=""></div>
-      <div class="sponsor sponsor-2"><img src="https://raw.githubusercontent.com/r-e-d-ant/Computer-store-website/b90ac65459206fef22e9b87313f587185554263b/assets/images/apple.svg" alt=""></div>
+            <!-- SUBSCRIBE SECTION -->
+            <section class="container section-5">
+                <h2>Stay Updated</h2>
+                <div class="subscribe-container">
+                    <input
+                        type="email"
+                        placeholder="Email address..."
+                        required
+                    />
+                    <button>Subscribe</button>
+                </div>
+            </section>
+        </main>
 
-      <!-- SPONSOR group 2 -->
-      <div class="sponsor sponsor-3"><img src="https://raw.githubusercontent.com/r-e-d-ant/Computer-store-website/b90ac65459206fef22e9b87313f587185554263b/assets/images/dell.svg" alt=""></div>
-      <div class="sponsor sponsor-4"><img src="https://raw.githubusercontent.com/r-e-d-ant/Computer-store-website/b90ac65459206fef22e9b87313f587185554263b/assets/images/ibm.svg" alt=""></div>
-    </section>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Address</h3>
+                    <p>123 Nordic Street</p>
+                    <p>City, Country</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <p>Custom Orders</p>
+                    <p>Gift Wrapping</p>
+                    <p>Art Consulting</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Suppliers</h3>
+                    <p>Nordic Woodworks</p>
+                    <p>Artisans United</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Invest in Us</h3>
+                    <p>
+                        Contact us to learn more about investment opportunities.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2021 - Present Reilm Creations</p>
+                <a href="#">Site by Thierry M</a>
+            </div>
+        </footer>
 
-    <!-- SUBSCRIBE SECTION-->
-    <section class="container section-5">
-      <h2 class="subscribe-input-label">NEWSLETTER</h2>
-      <div class="subscribe-container">
-        <input type="text" id="email-subscribe" placeholder="Email address...">
-        <input type="submit" value="SUBSCRIBE">
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="container top-footer">
-      <!-- footer item 1 -->
-      <div class="footer-item">
-        <h2 class="footer-title">ADDRESS</h2>
-        <div class="footer-items">
-          <h3>Adipisicing elit.</h3>
-          <h3>Adipisicing elit.</h3>
-          <h3>Adipisicing st18</h3>
-        </div>
-      </div>
-      <!-- footer item 2 -->
-      <div class="footer-item">
-        <h2 class="footer-title">SERVICES</h2>
-        <div class="footer-items">
-          <h3>Adipisicing elit.</h3>
-          <h3>Adipisicing elit.</h3>
-          <h3>Adipisicing elit.</h3>
-          <h3>Adipisicing elit.</h3>
-          <h3>Adipisicing elit.</h3>
-        </div>
-      </div>
-      <!-- footer item 3 -->
-      <div class="footer-item">
-        <h2 class="footer-title">SUPPLIERS</h2>
-        <div class="footer-items">
-          <h3>Adipisicing elit.</h3>
-          <h3>Adipisicing elit.</h3>
-          <h3>Adipisicing elit.</h3>
-          <h3>Adipisicing elit.</h3>
-          <h3>Adipisicing elit.</h3>
-        </div>
-      </div>
-      <!-- footer item 4 -->
-      <div class="footer-item">
-        <h2 class="footer-title">INVESTMENT</h2>
-        <div class="footer-items">
-          <h3>Adipisicing elit.</h3>
-          <h3>Adipisicing elit.</h3>
-          <h3>Adipisicing elit.</h3>
-          <h3>Adipisicing elit.</h3>
-          <h3>Adipisicing elit.</h3>
-        </div>
-      </div>
-    </div>
-    <div class="container end-footer">
-      <div class="copyright">copyright © 2021 - Present • <b>DOWNTOWN TECH LIVER</b></div>
-      <a class="designer" href="#">Thierry M</a>
-    </div>
-  </footer>
-</body>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
-</body>
+        <script src="./script.js"></script>
+    </body>
 </html>
